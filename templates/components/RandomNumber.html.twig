@@ -1,0 +1,11 @@
+<div {{ attributes }}>
+    <strong>{{ this.randomNumber }}</strong>
+
+    <input type="number" data-model="on(change)|max">
+
+    Generating a number between 0 and {{ max }}
+
+    <button
+        data-action="live#$render"
+    >Generate a new number!</button>
+</div>
